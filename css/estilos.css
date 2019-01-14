@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'sf_arch_rivalregular';
+    src: url('sf_arch_rival.woff2') format('woff2'),
+         url('sf_arch_rival.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*agregado 1.x para que el color agregado de gradiente se ve en el 100% de la pagina y se mantenga así a medida que se hace scroll*/
+html{
+    height: 100%;/*agregado 1.0 */
+    box-sizing: border-box;
+}
+*, *::after, *::before{
+    box-sizing: inherit;/*heredar*/
+}
+*{
+    margin:0;
+    padding:0;
+}
+header{
+    text-align: center;
+    padding: 20px;
+}
+body{
+    height: 100%;/*agregado 1.1*/
+    font-family: 'sf_arch_rivalregular', Verdana, Geneva, Tahoma, sans-serif;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f8ffe8+0,e3f5ab+33,b7df2d+100;Green+3D+%234 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d4e4ef+0,86aecc+100;Grey+Gloss */
+    background: rgb(212,228,239); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(212,228,239,1) 0%,rgba(134,174,204,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(212,228,239,1) 0%,rgba(134,174,204,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc',GradientType=0 ); /* IE6-9 */
+    background-repeat: no-repeat;/*agregado 1.2*/
+    background-attachment: fixed;/*agregado 1.3*/
+}
+.contenedor{
+    margin: 0 auto;
+    width: 800px;
+}
+div.hero img{
+    width: 100%;
+    border-radius: 50px;
+}
+
+ul.lista-productos{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    padding: 10px;
+    text-align: center;
+    color: blueviolet;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+ul.lista-productos li{
+    float: left;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+ul.lista-productos li:nth-child(2n+1){
+    clear: both;
+}
+ul.lista-productos li img {
+    border-radius: 15px;
+    border: 10px solid rgba(138, 46, 226, .7);
+}
+ul.lista-productos li img:hover{
+    border: 10px solid rgba(138, 46, 226, 1)
+}
+ul.lista-productos li p{
+    font-size: 28px;
+    font-weight: bold;
+    color: blueviolet;
+    margin-top: 10px;
+}
+ul.lista-productos li p span{
+    font-size: 40px;
+    color: #fffa00;
+}
+.boton{
+    background-color: #fffa00;
+    padding: 10px 40px;
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgba(138, 46, 226, .7);
+    border-radius: 10px;
+    border: 3px solid rgba(138, 46, 226, .7);
+    font-size: 18px
+}
+.boton:hover{
+    border: 3px solid rgba(138, 46, 226, 1);
+    color: rgba(138, 46, 226, 1);
+}
